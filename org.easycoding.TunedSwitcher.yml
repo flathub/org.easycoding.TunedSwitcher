@@ -19,8 +19,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/EasyCoding/tuned-switcher.git
-        tag: v0.7.0
-        commit: 98ba6b58ae874c12d29e63e7f5ae6b93c18cc5b3
+        tag: v0.7.1
+        commit: cec38bccb5a77be3a9ee15d19653bc5778f22dee
         x-checker-data:
           type: json
           url: https://api.github.com/repos/EasyCoding/tuned-switcher/releases/latest
