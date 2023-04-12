@@ -1,7 +1,7 @@
 id: org.easycoding.TunedSwitcher
 sdk: org.kde.Sdk
 runtime: org.kde.Platform
-runtime-version: 5.15-21.08
+runtime-version: 5.15-22.08
 finish-args:
   - --share=ipc
   - --socket=fallback-x11
@@ -11,19 +11,19 @@ finish-args:
   - --system-talk-name=org.freedesktop.systemd1
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.kde.StatusNotifierWatcher
-  - --own-name=org.kde.StatusNotifierItem-2-1
+  - --own-name=org.kde.*
 command: tuned-switcher
 modules:
   - name: tuned-switcher
     buildsystem: cmake-ninja
     sources:
       - type: git
-        url: https://github.com/EasyCoding/tuned-switcher.git
-        tag: v0.7.1
-        commit: cec38bccb5a77be3a9ee15d19653bc5778f22dee
+        url: https://github.com/xvitaly/tuned-switcher.git
+        tag: v0.7.2
+        commit: 4be41ec5631cd5744199423154b1d5c5ee7e67db
         x-checker-data:
           type: json
-          url: https://api.github.com/repos/EasyCoding/tuned-switcher/releases/latest
+          url: https://api.github.com/repos/xvitaly/tuned-switcher/releases/latest
           tag-query: .tag_name
           version-query: $tag | sub("^v"; "")
           timestamp-query: .published_at
