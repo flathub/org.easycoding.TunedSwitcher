@@ -18,8 +18,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/xvitaly/tuned-switcher.git
-        tag: v0.9.2
-        commit: d9573cfccb54d16837aab74af14dee5a2f537f57
+        tag: v0.9.3
+        commit: 293e959bc8f335bd183c88bc7c10077b9d1aeb5c
         x-checker-data:
           type: json
           url: https://api.github.com/repos/xvitaly/tuned-switcher/releases/latest
